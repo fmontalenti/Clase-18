@@ -85,13 +85,17 @@ ul.submenu li a{
         position: fixed;
         top: 0;
         bottom: 0;
-        right: 0;
         left: 100%;
         background-color: fuchsia;
         height: auto;
         z-index: 1;
+        width: 100vw;
+        transition:all 0.5s;
     }
-    nav ul li {
+    nav ul.open{
+        transform: translate(-100vw);
+    }   
+     nav ul li {
         width: 100%;
     }
     nav ul li a {
