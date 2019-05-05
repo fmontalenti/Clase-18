@@ -1,10 +1,18 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
 body {
     margin: 0;
-    background-color: whitesmoke;
+    background-color: #D475FF;
+}
+a {
+    color: #FFBFD2;
+    text-decoration: none;
 }
 header {
     padding: 0 32px;
-    background-color: aliceblue;
+    background-color: #9E62B3;
     border-bottom: 1px solid gainsboro;
     height: 72px;
     margin-bottom: 2000px;
@@ -53,15 +61,18 @@ nav ul li a{
 ul.submenu {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #B85484;
     border-radius: 4px;
     border: 1px solid white;
     height: auto;
     padding: 8px 0;
+    top: 64px;
+    left: 0;
 }
 ul.submenu li{
     width: 100%;
     margin: 0;
+    border-bottom: 1px solid #FFBFDE;
 }
 ul.submenu li:last-child{
     border-bottom: none;
@@ -69,10 +80,9 @@ ul.submenu li:last-child{
 }
 ul.submenu li a{
     line-height: 32px;
-    width: 80px;
+    width: 60px;
     padding: 0 24px;
-    border-bottom: 1px solid grey;
-}
+    }
 
 @media only screen and (max-width:600px){
     .mobileMenu {
@@ -114,5 +124,4 @@ ul.submenu li a{
     nav ul li:hover {
         border-top: none;
     }
-    ul.submenu li a {}
-}
+  
